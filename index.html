@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Slack-alvid by bonzofenix</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Slack-alvid</h1>
+        <h2></h2>
+
+        <section id="downloads">
+          <a href="https://github.com/bonzofenix/slack-alvid/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/bonzofenix/slack-alvid/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/bonzofenix/slack-alvid" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>Slack Bot for <a href="https://github.com/bonzofenix/alvid/">Alvid</a></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Create a new Bot Integration under <a href="http://slack.com/services/new/bot">services/new/bot</a>.</p>
+
+<p><img src="https://raw.githubusercontent.com/dblock/slack-ruby-bot/master/screenshots/register-bot.png" alt=""></p>
+
+<p>On the next screen, note the API token.</p>
+
+<h2>
+<a id="deploying-to-cf" class="anchor" href="#deploying-to-cf" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deploying to CF</h2>
+
+<pre><code>bundle package --all
+cf push slack-alvid --no-start
+# Slack's Alvid token
+cf set-env slack-alvid SLACK_API_TOKEN asas-12345678910-asdasdasdasdasdasdasdasd
+cf push slack-alvid 
+</code></pre>
+
+<p>Slack-alvid supports <a href="http://docs.pivotal.io/p-mysql/#provision-and-bind">MySql on CF.</a></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
