@@ -1,9 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'slack-ruby-bot', '0.4.0'
+gem 'faye-websocket'
 gem 'puma'
 gem 'sinatra'
+gem 'recursive-open-struct'
 gem 'alvid'
+# gem 'alvid', path: '~/workspace/alvid'
+
 
 group :development, :test do
   gem 'vcr'

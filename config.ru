@@ -12,4 +12,6 @@ Thread.new do
   end
 end
 
+SlackAlvid.load_config "config/#{ENV['RACK_ENV']}.yml"
+
 run SlackAlvid::Web

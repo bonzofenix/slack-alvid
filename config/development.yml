@@ -1,0 +1,7 @@
+--
+commands:
+  repo:
+    servers:
+      public:
+        access_token: asd123
+        api_endpoint: http://github.com/api/v3/
